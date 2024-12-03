@@ -18,4 +18,9 @@ class Garden {
     public function getTreeIds() {
         return $this->treeIds;
     }
+
+    // Метод для установки значения статической переменной
+    public function setStaticVariable($value) {
+        self::$nextId = $value;
+    }
 }
